@@ -1,0 +1,528 @@
+{
+	"info": {
+		"_postman_id": "31f38214-ec1b-4020-ae88-7502336d16be",
+		"name": "Sorozatok",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "withAuth",
+			"item": [
+				{
+					"name": "Title",
+					"item": [
+						{
+							"name": "add title",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\": \"Testtitle6\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/title",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"title"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get title by id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/title/26",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"title",
+										"26"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "paginate titles",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/title/0/10/-1/title6",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"title",
+										"0",
+										"10",
+										"-1",
+										"title6"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "modify title by id",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"img\": \"https://pbs.twimg.com/profile_images/949787136030539782/LnRrYf6e_400x400.jpg\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/title/5",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"title",
+										"5"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete title by id",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/title/7",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"title",
+										"7"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Episode",
+					"item": [
+						{
+							"name": "add episode",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"date\": \"2020.04.31\",\r\n    \"title\": 7,\r\n    \"season\": 1,\r\n    \"episode\": 1,\r\n    \"duration\": 22\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/episode",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"episode"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get episode by id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/episode/68",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"episode",
+										"68"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "modify episodes title",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/episode/10/3/2",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"episode",
+										"10",
+										"3",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "modify episode",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"date\": \"\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/episode/68",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"episode",
+										"68"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete episode by id",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/episode/1",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"episode",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get episodes by titleID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/episodes/26",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"episodes",
+										"26"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "User",
+					"item": [
+						{
+							"name": "get all user",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/users",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"users"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get user by id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/user/0",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"user",
+										"0"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "modify user by id",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"password\": \"testtest\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/user/0",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"user",
+										"0"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete user by id",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/user/1",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"user",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "login",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var c = pm.response.headers.get(\"Set-Cookie\").split(\";\")[0]\r",
+									"pm.collectionVariables.set('cookie', c)\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"usernameOrEmail\": \"test\",\r\n    \"password\": \"test1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/auth/login",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Test Test\",\r\n    \"username\": \"testtest2\",\r\n    \"email\": \"test2@test.com\",\r\n    \"password\": \"test1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/auth/register",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "get all title",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/titles",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"titles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all episodes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/episodes",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"episodes"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "key",
+				"value": "Cookie",
+				"type": "string"
+			},
+			{
+				"key": "value",
+				"value": "{{cookie}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "cookie",
+			"value": "",
+			"type": "default"
+		},
+		{
+			"key": "url",
+			"value": "http://localhost:5000",
+			"type": "default"
+		}
+	]
+}
