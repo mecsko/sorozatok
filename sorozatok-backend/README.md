@@ -1,7 +1,6 @@
-[Heroku](https://sorozatok.herokuapp.com/)
-
 # Links (technologies, software)
 
+Deployed: [Render](https://series-abzw.onrender.com/)
 
 ## Express
 
