@@ -10,6 +10,7 @@
     },
     "scripts": {
         "start": "node ./dist/server.js",
+        "build": "npm i && tsc",
         "compile": "tsc",
         "compile:watch": "tsc --watch",
         "postinstall": "tsc",
