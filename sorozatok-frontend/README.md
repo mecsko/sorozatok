@@ -1,6 +1,6 @@
 # `Vue 3.x + Quasar 2.x template with Vite`
 
-[Netlify](https://sorozatok-frontend.netlify.app/)
+[Render](https://sorozatok.onrender.com/)
 
 # For proper intellisense in template block
 
