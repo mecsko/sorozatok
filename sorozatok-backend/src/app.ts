@@ -60,15 +60,14 @@ export default class App {
 
     private connectToTheDatabase() {
         if (process.env.NODE_ENV === "development") {
-            mongoose.connect("mongodb://localhost:27017/sorozatok", err => {
+            mongoose.connect("mongodb://127.0.0.1:27017/sorozatok", err => {
                 if (err) {
                     console.log("Unable to connect to the server. Please start MongoDB.");
                 }
             });
         } else {
-            const { MONGO_USER, MONGO_PASSWORD, MONGO_PATH, MONGO_DB } = process.env;
             // Connect to MongoDB Atlas, create database if not exist::
-            mongoose.connect(`mongodb+srv://${MONGO_USER}:${MONGO_PASSWORD}${MONGO_PATH}${MONGO_DB}?retryWrites=true&w=majority`, err => {
+            mongoose.connect(process.env.MONGO_URI, err => {
                 if (err) {
                     console.log("Unable to connect to the server. Please check your connection string.");
                 }
