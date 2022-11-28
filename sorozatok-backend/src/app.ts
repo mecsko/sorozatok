@@ -40,7 +40,7 @@ export default class App {
         // Enabled CORS:
         this.app.use(
             cors(<cors.CorsOptions>{
-                origin: ["https://sorozatok-frontend.netlify.app", "http://localhost:8080"],
+                origin: ["https://sorozatok.onrender.com", "http://localhost:8080"],
                 credentials: true,
                 exposedHeaders: ["set-cookie"],
             }),
