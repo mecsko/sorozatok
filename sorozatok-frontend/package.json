@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "SET NODE_ENV=development && vite --port 8080 --open",
-    "build": "vite build",
+    "build": "npm i && vite build",
     "serve": "vite preview",
     "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx --ignore-path .gitignore --fix",
     "format": "prettier --write ./**/*.{vue,ts,tsx,js,jsx,css,less,scss,json,md}"
